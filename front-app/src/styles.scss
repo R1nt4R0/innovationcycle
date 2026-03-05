@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+// Include theming for Angular Material with `mat.theme()`.
+// This Sass mixin will define CSS variables that are used for styling Angular Material
+// components according to the Material 3 design spec.
+// Learn more about theming and how to use it for your application's
+// custom components at https://material.angular.dev/guide/theming
+@use '@angular/material' as mat;
+
+:root {
+  --primary-color: #54949c; // Bleu TRACKPRO [cite: 237]
+  --accent-color: #C404B2;  // Rose TRACKPRO [cite: 243]
+  --bg-color: #0C0C24;      // Noir profond [cite: 246]
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Inter', sans-serif; // Texte [cite: 231]
+  background-color: var(--bg-color);
+  color: white;
+}
+
+h1, h2, h3 {
+  font-family: 'Sora', sans-serif; // Titres [cite: 229]
+}

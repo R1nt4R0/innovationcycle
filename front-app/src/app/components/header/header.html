@@ -1,0 +1,36 @@
+<mat-toolbar color="primary" class="tp-header mat-elevation-z4">
+  <div class="header-container">
+    <div class="brand" routerLink="/">
+      <img src="logoTrackPro_NoName.png" alt="TRACKPRO Logo" class="logo">
+      <span class="brand-name">TRACKPRO</span>
+    </div>
+
+    <nav class="nav-links">
+      <a mat-button routerLink="/leaderboard" routerLinkActive="active-link">
+        <mat-icon>leaderboard</mat-icon> Leaderboard
+      </a>
+      <a mat-button routerLink="/contrats" routerLinkActive="active-link">
+        <mat-icon>description</mat-icon> Contrats
+      </a>
+    </nav>
+
+    <span class="spacer"></span>
+
+    <div class="actions">
+      <button mat-flat-button class="premium-btn" routerLink="/premium">
+        <mat-icon>stars</mat-icon>
+        <span>PREMIUM</span>
+      </button>
+
+      <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Menu utilisateur">
+        <mat-icon>account_circle</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>Profil</button>
+        <button mat-menu-item>Paramètres</button>
+        <mat-divider></mat-divider>
+        <button mat-menu-item>Déconnexion</button>
+      </mat-menu>
+    </div>
+  </div>
+</mat-toolbar>
