@@ -1,0 +1,78 @@
+.tp-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #0C0C24 !important; // Noir profond [cite: 246]
+  height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #54949c; // Ligne bleue [cite: 237]
+
+  .header-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+  }
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 12px;
+
+  .logo {
+    height: 45px;
+    width: auto;
+  }
+
+  .brand-name {
+    font-family: 'Sora', sans-serif; // Police Titre [cite: 229]
+    font-weight: 800;
+    font-size: 1.4rem;
+    color: #54949c; // Bleu [cite: 237]
+    letter-spacing: 1.5px;
+  }
+}
+
+.nav-links {
+  margin-left: 40px;
+  display: flex;
+  gap: 8px;
+
+  a {
+    font-family: 'Inter', sans-serif; // Police Texte [cite: 231]
+    color: rgba(255, 255, 255, 0.8);
+
+    &.active-link {
+      color: #54949c;
+      background: rgba(84, 148, 156, 0.1);
+    }
+  }
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  .premium-btn {
+    background-color: #C404B2 !important; // Rose Premium [cite: 243]
+    color: white;
+    font-family: 'Sora', sans-serif;
+    font-weight: 700;
+    border-radius: 6px;
+    padding: 0 20px;
+
+    mat-icon {
+      margin-right: 8px;
+    }
+  }
+}
